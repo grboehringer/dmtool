@@ -25,6 +25,8 @@ public class DungeonMasterStudio{
                     break;
             }
         }while(repeat);
+        s.close();
+        
     }
     public static String nameGenerator() {
         Random rand = new Random();
