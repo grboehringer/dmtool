@@ -6,31 +6,8 @@ public class DungeonMasterStudio{
             start();
             again = yesNo();
         }while(again == true);
-        final Scanner s = new Scanner(System.in);
-        String[] newName;
-        char yn;
-        boolean repeat;
-        do {
-            newName = generateName();
-            System.out.println(newName[0] + " " + newName[1]);
-            System.out.print("Again? ");
-            yn = s.nextLine().charAt(0);
-            switch (yn) {
-                case 'y':
-                case 'Y':
-                    repeat = true;
-                    break;
-                case 'n':
-                case 'N':
-                    repeat = false;
-                    break;
-                default:
-                    repeat = false;
-                    break;
-            }
-        } while (repeat);
-
-
+        Character character = new Character();
+        System.out.println(character.toString());
     }
     public static boolean yesNo(){
         Scanner s = new Scanner(System.in);
@@ -77,19 +54,13 @@ public class DungeonMasterStudio{
         }
         System.out.println("Total of rolls: "+total);
     }
-    
-    public static String nameGenerator() {
-        Random rand = new Random();
-
-        String[] firstName = {"Dave","Steve"};
-        String[] lastName = {"Smith","Carl"};
-        String name = firstName[rand.nextInt(2)] + " " + lastName[rand.nextInt(2)];
-        return name;
+}
+class Character{
+    String[] name;
+    public Character(){
+        name = generateName();
     }
-
-
-
-    public static String[] generateName() {
+    public String[] generateName() {
         final Scanner s = new Scanner(System.in);
 
         final Random rand = new Random();
@@ -265,5 +236,10 @@ public class DungeonMasterStudio{
             break;
         }
         return name;
+    }
+
+    public String toString(){
+        String output = name[0] + " " + name[1];
+        return output;
     }
 }
