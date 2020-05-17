@@ -1,0 +1,13 @@
+/home/grant/Documents/Github/dmtool/obj/Debug/netcoreapp3.1/dmtool.csprojAssemblyReference.cache
+/home/grant/Documents/Github/dmtool/obj/Debug/netcoreapp3.1/dmtool.csproj.CoreCompileInputs.cache
+/home/grant/Documents/Github/dmtool/obj/Debug/netcoreapp3.1/dmtool.AssemblyInfoInputs.cache
+/home/grant/Documents/Github/dmtool/obj/Debug/netcoreapp3.1/dmtool.AssemblyInfo.cs
+/home/grant/Documents/Github/dmtool/bin/Debug/netcoreapp3.1/dmtool
+/home/grant/Documents/Github/dmtool/bin/Debug/netcoreapp3.1/dmtool.deps.json
+/home/grant/Documents/Github/dmtool/bin/Debug/netcoreapp3.1/dmtool.runtimeconfig.json
+/home/grant/Documents/Github/dmtool/bin/Debug/netcoreapp3.1/dmtool.runtimeconfig.dev.json
+/home/grant/Documents/Github/dmtool/bin/Debug/netcoreapp3.1/dmtool.dll
+/home/grant/Documents/Github/dmtool/bin/Debug/netcoreapp3.1/dmtool.pdb
+/home/grant/Documents/Github/dmtool/obj/Debug/netcoreapp3.1/dmtool.dll
+/home/grant/Documents/Github/dmtool/obj/Debug/netcoreapp3.1/dmtool.pdb
+/home/grant/Documents/Github/dmtool/obj/Debug/netcoreapp3.1/dmtool.genruntimeconfig.cache

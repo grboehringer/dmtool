@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/grant/Documents/Github/dmtool/dmtool.csproj": {}
+  },
+  "projects": {
+    "/home/grant/Documents/Github/dmtool/dmtool.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/grant/Documents/Github/dmtool/dmtool.csproj",
+        "projectName": "dmtool",
+        "projectPath": "/home/grant/Documents/Github/dmtool/dmtool.csproj",
+        "packagesPath": "/home/grant/.nuget/packages/",
+        "outputPath": "/home/grant/Documents/Github/dmtool/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/grant/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

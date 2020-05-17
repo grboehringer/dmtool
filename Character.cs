@@ -1,7 +1,7 @@
 using System;
 
-namespace dm{
-    class Character{
+namespace dmtool{
+    public class Character{
         string[] name;
         public Character(){
             name = generateName();
@@ -14,9 +14,9 @@ namespace dm{
             string[] name = new string[2];
             
             Console.Write("Race: ");
-            string race = s.nextLine();
+            string race = Console.ReadLine();
             Console.Write("Gender: ");
-            string gender = s.nextLine();
+            string gender = Console.ReadLine();
 
             string[] dwarfMale = {"Adrik", "Alberich", "Baern", "Barendd", "Brottor",
                 "Bruenor", "Dain", "Darrak", "Delg", "Eberk", "Einkil", "Fargrim",
@@ -114,67 +114,67 @@ namespace dm{
 
             switch (race){
                 case "dwarf":
-                    if (gender.equals("male")){
-                        name[0] = dwarfMale[rand.nextInt(dwarfMale.length)];
+                    if (gender.Equals("male")){
+                        name[0] = dwarfMale[rand.Next(dwarfMale.Length)];
                     }
                     else{
-                        name[0] = dwarfFemale[rand.nextInt(dwarfFemale.length)];
+                        name[0] = dwarfFemale[rand.Next(dwarfFemale.Length)];
                     }
-                    name[1] = dwarfLast[rand.nextInt(dwarfLast.length)];
+                    name[1] = dwarfLast[rand.Next(dwarfLast.Length)];
                 break;
                 case "elf":
-                    if (gender.equals("male")){
-                        name[0] = elfMale[rand.nextInt(elfMale.length)];
+                    if (gender.Equals("male")){
+                        name[0] = elfMale[rand.Next(elfMale.Length)];
                     }
                     else{
-                        name[0] = elfFemale[rand.nextInt(elfFemale.length)];
+                        name[0] = elfFemale[rand.Next(elfFemale.Length)];
                     }
-                    name[1] = elfLast[rand.nextInt(elfLast.length)];
+                    name[1] = elfLast[rand.Next(elfLast.Length)];
                 break;
                 case "halfling":
-                    if (gender.equals("male")){
-                        name[0] = halflingMale[rand.nextInt(halflingMale.length)];
+                    if (gender.Equals("male")){
+                        name[0] = halflingMale[rand.Next(halflingMale.Length)];
                     }
                     else{
-                        name[0] = halflingFemale[rand.nextInt(halflingFemale.length)];
+                        name[0] = halflingFemale[rand.Next(halflingFemale.Length)];
                     }
-                    name[1] = halflingLast[rand.nextInt(halflingLast.length)];
+                    name[1] = halflingLast[rand.Next(halflingLast.Length)];
                 break;
                 case "dragonborn":
-                    if (gender.equals("male")){
-                        name[0] = dragonbornMale[rand.nextInt(dragonbornMale.length)];
+                    if (gender.Equals("male")){
+                        name[0] = dragonbornMale[rand.Next(dragonbornMale.Length)];
                     }
                     else{
-                    name[0] = dragonbornFemale[rand.nextInt(dragonbornFemale.length)]; 
+                    name[0] = dragonbornFemale[rand.Next(dragonbornFemale.Length)]; 
                     }
-                    name[1] = dragonbornLast[rand.nextInt(dragonbornLast.length)];
+                    name[1] = dragonbornLast[rand.Next(dragonbornLast.Length)];
                 break;
                 case "gnome":
-                    if (gender.equals("male")){
-                        name[0] = gnomeMale[rand.nextInt(gnomeMale.length)];
+                    if (gender.Equals("male")){
+                        name[0] = gnomeMale[rand.Next(gnomeMale.Length)];
                     }
                     else{
-                        name[0] = gnomeFemale[rand.nextInt(gnomeFemale.length)];
+                        name[0] = gnomeFemale[rand.Next(gnomeFemale.Length)];
                     }
-                    name[1] = gnomeLast[rand.nextInt(gnomeLast.length)];
+                    name[1] = gnomeLast[rand.Next(gnomeLast.Length)];
                 break;
                 case "orc":
-                    if (gender.equals("male")){
-                        name[0] = orcMale[rand.nextInt(orcMale.length)];
+                    if (gender.Equals("male")){
+                        name[0] = orcMale[rand.Next(orcMale.Length)];
                     }
                     else{
-                    name[0] = orcFemale[rand.nextInt(orcFemale.length)]; 
+                    name[0] = orcFemale[rand.Next(orcFemale.Length)]; 
                     }
                     name[1] = " ";
                 break;
                 case "tiefling":
-                    if (gender.equals("male")){
-                        name[0] = tieflingMale[rand.nextInt(tieflingMale.length)];
+                    if (gender.Equals("male")){
+                        name[0] = tieflingMale[rand.Next(tieflingMale.Length)];
                     }
                     else{
-                        name[0] = tieflingFemale[rand.nextInt(tieflingFemale.length)];
+                        name[0] = tieflingFemale[rand.Next(tieflingFemale.Length)];
                     }
-                    name[1] = tieflingLast[rand.nextInt(tieflingLast.length)];
+                    name[1] = tieflingLast[rand.Next(tieflingLast.Length)];
                 break;
                 default:
                     name[0] = "Invalid";
@@ -184,7 +184,7 @@ namespace dm{
             return name;
         }
 
-        public string ToString(){
+        public string toString(){
             string output = name[0] + " " + name[1];
             return output;
         }

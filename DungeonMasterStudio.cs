@@ -1,9 +1,9 @@
 using System;
 
-namespace dm{
+namespace dmtool{
     public class DungeonMasterStudio{
-        public static void main(String[] args) {
-            boolean again;
+        public static void Main(string[] args) {
+            bool again;
             do{
                 start();
                 again = yesNo();
@@ -11,13 +11,13 @@ namespace dm{
             Character character = new Character();
             Console.WriteLine(character.toString());
         }
-        public static boolean yesNo(){
-            boolean error;
-            boolean again = false;
+        public static bool yesNo(){
+            bool error;
+            bool again = false;
             do {
                 error = false;
                 Console.Write("Roll again? (Y/N): ");
-                char confirm = s.nextLine().charAt(0);
+                char confirm = Console.ReadLine()[0];
                 if (confirm == 'Y' || confirm == 'y') {
                 again = true;
         
@@ -32,15 +32,15 @@ namespace dm{
         }
         public static void start(){
             Console.Write("How many dice do you want to roll? ");
-            int rollNum = Integer.parseInt(s.nextLine());
+            int rollNum = int.Parse(Console.ReadLine());
             Console.Write("What sided dice? ");
-            int diceSide = Integer.parseInt(s.nextLine());
+            int diceSide = int.Parse(Console.ReadLine());
             display(rollNum, diceSide);
         }
 
         public static int roll(int dice) {// returns a int
             Random r = new Random();
-            int rollNum = r.nextInt(dice) + 1;
+            int rollNum = r.Next(dice) + 1;
             return rollNum; // must have return statement
         }
 
