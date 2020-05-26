@@ -1,8 +1,33 @@
 using System;
+using System.Collections.Generic;
 
 namespace dmtool{
     public class Character{
         string[] name;
+        Race race;
+        string gender;
+        Background background;
+        Class clss;
+        int[] abilities = new int[6] {0, 0, 0, 0, 0, 0};
+        // 0 = Str, 1 = Dex, 2 = Con, 3 = Int, 4 = Wis, 5 = Cha
+        bool[] savingProf = new bool[6] {false, false, false, false, false, false};
+        // 0 = Str, 1 = Dex, 2 = Con, 3 = Int, 4 = Wis, 5 = Cha
+        bool[,] skillProf = new bool[19, 2] {{false, false}, {false, false}, {false, false}, {false, false},
+         {false, false}, {false, false}, {false, false}, {false, false}, {false, false}, {false, false}, 
+         {false, false}, {false, false}, {false, false}, {false, false}, {false, false}, {false, false}, 
+         {false, false}, {false, false}, {false, false}};
+        /* 0 = Acrobatics, 1 = Animal Handling, 2 = Arcana, 3 = Athletics, 4 = Deception, 5 = History,
+         * 6 = Insight, 7 = Intimidation, 8 = Investigation, 9 = Medicine, 10 = Nature, 11 = Perception,
+         * 12 = Performance, 13 = Persuasion, 14 = Religion, 15 = Sleight of Hand, 16 = Stealth, 
+         * 17 = Survival, 18 = Tool
+         */
+        bool[] armorProf = new bool[4] {false, false, false, false};
+        // 0 = Light, 1 = Medium, 2 = Heavy, 3 = Shields
+        bool[] weaponProf = new bool[3] {false, false, false};
+        // 0 = Simple, 1 = Martial, 2 = Other
+        List<Feature> Features = new List<Feature>();
+
+
         public Character(){
             name = generateName();
         }
