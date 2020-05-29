@@ -526,5 +526,391 @@ If you use a 9th level spell slot, the spell lasts until it is dispelled.
 Using a spell slot of 5th level or higher grants a duration that doesn’t require concentration.",
             "Necrotic"
         );
-    }
+        Spell BigbysHand = new Spell(
+            "Bigby's Hand",
+            5,
+            "Evocation",
+            "1 Action",
+            "120 ft",
+            "V, S, M (An eggshell and a snakeskin glove)",
+            "Concentration, 1 minute",
+            @"You create a Large hand of shimmering, translucent force in an unoccupied space that you can see within range. The hand lasts for the spell’s duration, and it moves at your command, mimicking the movements of your own hand.
+
+The hand is an object that has AC 20 and hit points equal to your hit point maximum. If it drops to 0 hit points, the spell ends. It has a Strength of 26 (+8) and a Dexterity of 10 (+0). The hand doesn’t fill its space.
+
+When you cast the spell and as a bonus action on your subsequent turns, you can move the hand up to 60 feet and then cause one of the following effects with it.
+
+Clenched Fist 
+The hand strikes one creature or object within 5 feet of it. Make a melee spell attack for the hand using your game statistics. On a hit, the target takes 4d8 force damage.
+
+Forceful Hand
+The hand attempts to push a creature within 5 feet of it in a direction you choose. Make a check with the hand’s Strength contested by the Strength (Athletics) check of the target. If the target is Medium or smaller, you have advantage on the check. If you succeed, the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target to remain within 5 feet of it.
+
+Grasping Hand
+The hand attempts to grapple a Huge or smaller creature within 5 feet of it. You use the hand’s Strength score to resolve the grapple. If the target is Medium or smaller, you have advantage on the check. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes bludgeoning damage equal to 2d6 + your spellcasting ability modifier.
+
+Interposing Hand
+The hand interposes itself between you and a creature you choose until you give the hand a different command. The hand moves to stay between you and the target, providing you with half cover against the target. The target can’t move through the hand’s space if its Strength score is less than or equal to the hand’s Strength score. If its Strength score is higher than the hand’s Strength score, the target can move toward you through the hand’s space, but that space is difficult terrain for the target.
+
+At higher level
+When you cast this spell using a spell slot of 6th level or higher, the damage from the clenched fist option increases by 2d8 and the damage from the grasping hand increases by 2d6 for each slot level above 5th.",
+            "idk"
+        );
+        Spell BladeBarrier = new Spell(
+            "Blade Barrier",
+            6,
+            "Evocation",
+            "1 Action",
+            "90 ft",
+            "V, S",
+            "Concentration, 10 minutes",
+            @"You create a vertical wall of whirling, razor-sharp blades made of magical energy. The wall appears within range and lasts for the duration. You can make a straight wall up to 100 feet long, 20 feet high, and 5 feet thick, or a ringed wall up to 60 feet in diameter, 20 feet high, and 5 feet thick. The wall provides three-quarters cover to creatures behind it, and its space is difficult terrain.
+
+ When a creature enters the wall’s area for the first time on a turn or starts its turn there, the creature must make a Dexterity saving throw. On a failed save, the creature takes 6 d10 slashing damage. On a successful save, the creature takes half as much damage.",
+            "idk"
+        );
+        Spell BladeWard = new Spell(
+            "Blade Ward",
+            0,
+            "Abjuration",
+            "1 Action",
+            "Self",
+            "V, S",
+            "1 round",
+            @"You extend your hand and trace a sigil of warding in the air. Until the end of your next turn, you have resistance against bludgeoning, piercing, and slashing damage dealt by weapon attacks.",
+            "idk"
+        );
+        Spell Bless = new Spell(
+            "Bless",
+            1,
+            "Enchantment",
+            "1 Action",
+            "30 ft",
+            "V, S, M (a sprinkling of holy water)",
+            "Concentration, 1 minute",
+            @"You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw. 
+
+At higher level
+When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.",
+            "idk"
+        );
+        Spell Blight = new Spell(
+            "Blight",
+            4,
+            "Necromancy",
+            "1 Action",
+            "30 ft",
+            "V, S",
+            "Instantaneous",
+            @"Necromantic energy washes over a creature of your choice that you can see within range, draining moisture and vitality from it. The target must make a Constitution saving throw. The target takes 8d8 necrotic damage on a failed save, or half as much damage on a successful one. This spell has no effect on undead or constructs.
+
+If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the spell deals maximum damage to it.
+
+If you target a nonmagical plant that isn’t a creature, such as a tree or shrub, it doesn’t make a saving throw; it simply withers and dies.
+
+At higher level
+When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
+            "Necrotic"
+        );
+        Spell BlindingSmite = new Spell(
+            "Blinding Smite",
+            3,
+            "Evocation",
+            "1 Bonus Action",
+            "Self",
+            "V",
+            "Concentration, 1 minute",
+            @"The next time you hit a creature with a melee weapon attack during this spell’s duration, you weapon flares with a bright light, and the attack deals an extra 3d8 radiant damage to the target. Additionally, the target must succeed on a Constitution saving throw or be blinded until the spell ends.
+
+A creature blinded by this spell makes another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.",
+            "Radiant"
+        );
+        Spell BlindnessDeafness = new Spell(
+            "Blindness/Deafness",
+            2,
+            "Necromancy",
+            "1 Action",
+            "30 ft",
+            "V",
+            "1 minute",
+            @"You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends. 
+
+At higher level
+When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.",
+            "idk"
+        );
+        Spell Blink = new Spell(
+            "Blink",
+            3,
+            "Transmutation",
+            "1 action",
+            "Self",
+            "V, S",
+            "1 minute",
+            @"Roll a d20 at the end of each of your turns for the duration of the spell. On a roll of 11 or higher, you vanish from your current plane of existence and appear in the Etheral Plane (the spell fails and the casting is wasted if you were already on that plane).
+
+At the start of you next turn, and when the spell ends if you are on the Etheral Plane, you return to an unoccupied space of your choice that you can see within 10 feet of the space you vanished from. If no unoccupied space is available within that range, you appear in the nearest unoccupied space (chosen at random if more that one space is equally near). You can dismiss this spell as an action.
+
+While on the Ethereal Plane, you can see and hear the plane you originated from, which is cast in shades of gray, and you can’t see anything more than 60 feet away.You can only affect and be affected by other reatures on the Ethereal Plane. Creature that aren’t there can’t perceive you or interact with you, unless they have the ability to do so.",
+            "idk"
+        );
+        Spell Blur = new Spell(
+            "Blur",
+            2,
+            "Illusion",
+            "1 Action",
+            "Self",
+            "V",
+            "Concentration, 1 minute",
+            @"Your body becomes blurred, shifting and wavering to all who can see you. For the duration, any creature has disadvantage on attack rolls against you. An attacker is immune to this effect if it doesnt rely on sight, as with blindsight, or can see through illusions, as with truesight.",
+            "idk"
+        );
+        Spell BonesOfTheEarth = new Spell(
+            "Bones of the Earth",
+            6,
+            "Transmutation",
+            "1 Action",
+            "120 ft",
+            "V, S",
+            "Instantaneous",
+            @"You cause up to six pillars of stone to burst from places on the ground that you can see within range. Each pillar is a cylinder that has a diameter of 5 feet and a height of up to 30 feet. The ground where a pillar appears must be wide enough for its diameter, and you can target ground under a creature if that creature is Medium or smaller. Each pillar has AC 5 and 30 hit points. When reduced to 0 hit points, a pillar crumbles into rubble, which creates an area of difficult terrain with a 10-foot radius. The rubble lasts until cleared.
+If a pillar is created under a creature, that creature must succeed on a Dexterity saving throw or be lifted by the pillar. A creature can choose to fail the save.
+If a pillar is prevented from reaching its full height because of a ceiling or other obstacle, a creature on the pillar takes 6d6 bludgeoning damage and is restrained, pinched between the pillar and the obstacle. The restrained creature can use an action to make a Strength or Dexterity check (the creature’s choice) against the spell’s saving throw DC. On a success, the creature is no longer restrained and must either move off the pillar or fall off it.
+At Higher Levels. When you cast this spell using a spell slot of 7th level or higher, you can create two additional pillars for each slot level above 6th.",
+            "idk"
+        );
+        Spell BoomingBlade = new Spell(
+            "Booming Blade",
+            0,
+            "Evocation",
+            "1 Action",
+            "5 ft",
+            "V, M(a weapon)",
+            "1 Round",
+            @"As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails.
+On a hit, the target suffers the attack's normal effects, and it becomes sheathed in booming energy until the start of your next turn. If the target willingly moves be- fore then, it immediately takes 1d8 thunder damage, and the spell ends.
+This spell's damage increases when you reach higher levels. 
+
+At higher level
+At 5th level, the melee attack deals an extra 1d8 thunder damage to the target, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level and 17th level.",
+            "Thunder"
+        );
+        Spell BrandingSmite = new Spell(
+            "Branding Smite",
+            2,
+            "Evocation",
+            "1 Bonus Action",
+            "Self",
+            "V",
+            "Concentration, 1 minute",
+            @"The next time you hit a creature with a weapon attack before this spell ends, the weapon glemas with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it is invisible, and the target sheds dim light in a 5-foot radius and can’t become invisible until the spell ends. 
+
+At higher level
+When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd.",
+            "Radiant"
+        );
+        Spell BurningHands = new Spell(
+            "Burning Hands",
+            1,
+            "Evocation",
+            "1 Action",
+            "Self (15-foot-cone)",
+            "V, S",
+            "Instantaneous",
+            @"As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.
+
+The fire ignites any flammable objects in the area that aren’t being worn or carried. 
+
+At higher level
+When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.",
+            "Fire"
+        );
+        Spell CallLightning = new Spell(
+            "Call Lightning",
+            3,
+            "Conjuration",
+            "1 Action",
+            "120 ft",
+            "V, S",
+            "Concentration, 10 minutes",
+            @"A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can’t see a point in the air where the storm cloud could appear (for example, if you are in a room that can’t accommodate the cloud).
+
+When you cast the spell, choose a point you can see within range. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a Dexterity saving throw. A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.
+
+If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell’s damage increases by 1d10. 
+
+At higher level
+When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd.",
+            "Lightning"
+        );
+        Spell CalmEmotions = new Spell(
+            "Calm Emotions",
+            2,
+            "Enchantment",
+            "1 Action",
+            "60 ft",
+            "V, S",
+            "Concentration, 1 minute",
+            @"You attempt to suppress strong emotions in a group of people.
+Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a Charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects. You can suppress any effect causing a target to be charmed or frightened. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.
+
+Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the DM rules otherwise.",
+            "idk"
+        );
+        Spell Catapult = new Spell(
+            "Catapult",
+            1,
+            "Transmutation",
+            "1 Action",
+            "150 ft",
+            "S",
+            "Instantaneous",
+            @"Choose one object weighing 1 to 5 pounds within range that isn’t being worn or carried. The object flies in a straight line up to 90 feet in a direction you choose before falling to the ground, stopping early if it impacts against a solid surface. If the object would strike a creature, that creature must make a Dexterity saving throw. On a failed save, the object strikes the target and stops moving. In either case, both the object and the creature or solid surface take 3d8 bludgeoning damage.
+At Higher Levels. When you cast this spell using a spell slot of 2nd level or higher, the maximum weight of objects that you can target with this spell increases by 5 pounds, and the damage increases by 1d8, for each slot level above 1st.",
+            "idk"
+        );
+        Spell Catnap = new Spell(
+            "Catnap",
+            3,
+            "Enchantment",
+            "1 Action",
+            "30 ft",
+            "S, M(a pinch of sand)",
+            "10 minutes",
+            @"You make a calming gesture, and up to three willing creatures of your choice that you can see within range fall unconscious for the spell’s duration. The spell ends on a target early if it takes damage or someone uses an action to shake or slap it awake. If a target remains unconscious for the full duration, that target gains the benefit of a short rest, and it can’t be affected by this spell again until it finishes a long rest.
+
+At higher level
+When you cast this spell using a spell slot of 4th level or higher, you can target one additional willing creature for each slot level above 3rd.",
+            "idk"
+        );
+        Spell CauseFear = new Spell(
+            "Cause Fear",
+            1,
+            "Necromancy",
+            "1 Action",
+            "60 ft",
+            "V",
+            "Concentration, 1 minute",
+            @"You awaken the sense of mortality in one creature you can see within range. A construct or an undead is immune to this effect. The target must succeed on a Wisdom saving throw or become frightened of you until the spell ends. The frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+
+At higher level
+When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above lst. The creatures must be within 30 feet of each other when you target them.",
+            "idk"
+        );
+        Spell Ceremony = new Spell(
+            "Ceremony",
+            1,
+            "Abjuration",
+            "1 Hour",
+            "Touch",
+            "V, S, M (25 gp worth of powdered silver,which the spell consumes)",
+            "Instantaneous",
+            @"You perform a special religious ceremony that is infused with magic. When you cast the spell, choose one of the following rites, the target of which must be within 10 feet of you throughout the casting.
+Atonement. You touch one willing creature whose alignment has changed, and you make a DC 20 Wisdom (Insight) check. On a successful check, you restore the target to its original alignment.
+Bless Water. You touch one vial of water and cause it to become holy water.
+Coming of Age. You touch one humanoid who is a young adult. For the next 24 hours, whenever the target makes an ability check, it can roll a d4 and add the number rolled to the ability check. A creature can benefit from this rite only once.
+Dedication. You touch one humanoid who wishes to be dedicated to your god’s service. For the next 24 hours, whenever the target makes a saving throw, it can roll a d4 and add the number rolled to the save. A creature can benefit from this rite only once.
+Funeral Rite. You touch one corpse, and for the next 7 days, the target can’t become undead by any means short of a wish spell.
+Wedding. You touch adult humanoids willing to be bonded together in marriage. For the next 7 days, each target gains a +2 bonus to AC while they are within 30 feet of each other. A creature can benefit from this rite again only if widowed.",
+            "idk"
+        );
+        Spell ChainLightning = new Spell(
+            "Chain Lightning",
+            6,
+            "Evocation",
+            "1 Action",
+            "150 ft",
+            "V, S, M (a bit of fur; a piece of amber, glass, or a crystal rod; and three silver pins)",
+            "Instantaneous",
+            @"You create a bolt of lightning that arcs toward a target of your choice that you can see within range. Three bolts then leap from that target to as many as three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can be targeted by only one of the bolts.
+
+A target must make a Dexterity saving throw. The target takes 10d8 lightning damage on a failed save, or half as much on a successful one. 
+
+At higher level
+When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th.",
+            "Lightning"
+        );
+        Spell ChaosBolt = new Spell(
+            "Chaos Bolt",
+            1,
+            "Evocation",
+            "1 Action",
+            "120 ft",
+            "V, S",
+            "Instantaneous",
+            @"You hurl an undulating, warbling mass of chaotic energy at one creature in range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 + 1d6 damage. Choose one of the d8s. The number rolled on that die determines the attacks damage type, as shown below.
+d8 / Damage Type
+1 / Acid
+2 / Cold
+3 / Fire
+4 / Force
+5 / Lightning
+6 / Poison
+7 / Psychic
+8 / Thunder
+If you roll the same number on both d8s, the chaotic energy leaps from the target to a different creature of your choice within 30 feet of it. Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again. A creature can be targeted only once by each casting of this spell.
+
+At higher level
+When you cast this spell using a spell slot of 2nd level or higher, each target takes 1d6 extra damage of the type rolled for each slot level above 1st.",
+            "idk"
+        );
+        Spell CharmMonster = new Spell(
+            "Charm Monster",
+            4,
+            "Enchantment",
+            "1 Action",
+            "30 ft",
+            "V, S",
+            "1 Hour",
+            @"You attempt to charm a creature you can see within range. It must make a Wisdom saving throw, and it does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature is friendly to you. When the spell ends, the creature knows it was charmed by you.
+
+At higher level
+When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th. The creatures must be within 30 feet of each other when you target them.",
+            "idk"
+        );
+        Spell CharmPerson = new Spell(
+            "Charm Person",
+            1,
+            "Enchantment",
+            "1 Action",
+            "30 ft",
+            "V, S",
+            "1 hour",
+            @"You attempt to charm a humanoid you can see within range.
+It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is charmed by you until the spell ends or until you or your companions do anything harmful to it.The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.
+
+At higher level
+When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.",
+            "idk"
+        );
+        Spell ChillTouch = new Spell(
+            "Chill Touch",
+            0,
+            "Necromancy",
+            "1 Action",
+            "120 ft",
+            "V, S",
+            "1 Round",
+            @"You create a ghostly, skeletal hand in the space of a creature within range.
+Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can’t regain hit points until the start of your next turn. Until then, the hand clings to the target. If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn. 
+
+At higher level
+This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+            "Necrotic"
+        );
+        Spell ChromaticOrb = new Spell(
+            "Chromatic Orb",
+            1,
+            "Evocation",
+            "1 Action",
+            "90 ft",
+            "V, S, M (a diamond worth at least 50 gp)",
+            "Instantaneous",
+            @"You hurl a 4-inch-diameter sphere of energy at a creature that you can see within range. You choose acid, cold, fire, lightning, poison, or thunder for the type of orb you create, and then make a ranged spell attack against the target. If the attack hits, the creature takes 3d8 damage of the type you chose. 
+
+At higher level
+When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+            "idk"
+        ); 
+   }
 }
